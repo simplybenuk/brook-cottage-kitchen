@@ -1,1 +1,110 @@
-<p>Hello</p>
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brook Cottage Kitchen</title>
+    <meta name="theme-color" content="#d8c1a0" />
+
+    <style>
+      * { box-sizing: border-box; }
+
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background:
+          linear-gradient(rgba(20, 12, 6, 0.15), rgba(20, 12, 6, 0.15)),
+          url("assets/tabletop.png") center / cover no-repeat;
+      }
+
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+      }
+
+      .logo {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: rgba(226,218,207);
+        display: grid;
+        place-items: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      }
+
+      .logo img {
+        width: 175px;
+        max-width: 70%;
+        height: auto;
+        display: block;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 22px;
+        border-radius: 999px;
+        background: #2d241d;
+        color: #fffaf4;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        box-shadow: 0 8px 20px rgba(45, 36, 29, 0.25);
+        transition: transform 0.15s ease, opacity 0.15s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+        opacity: 0.95;
+      }
+
+      .icon {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+      }
+
+      @media (max-width: 480px) {
+        .logo {
+          width: 150px;
+          height: 150px;
+        }
+
+        .logo img {
+          width: 100px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="logo">
+        <!-- use JPG if that's all you have -->
+        <img src="assets/brook_cottage_kitchen_logo.jpg" alt="Brook Cottage Kitchen logo" />
+      </div>
+
+      <a
+        class="button"
+        href="https://www.instagram.com/brookcottagekitchen/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5Zm8.9 1.65a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 6.4A5.6 5.6 0 1 1 6.4 12 5.6 5.6 0 0 1 12 6.4Zm0 1.5A4.1 4.1 0 1 0 16.1 12 4.1 4.1 0 0 0 12 7.9Z" />
+        </svg>
+        Follow on Instagram
+      </a>
+    </div>
+  </body>
+</html>
