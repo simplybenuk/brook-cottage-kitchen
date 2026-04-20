@@ -1,0 +1,1 @@
+As assets folder
